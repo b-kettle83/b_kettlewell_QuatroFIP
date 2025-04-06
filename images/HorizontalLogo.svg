@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 598.66 175.35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-family: Avenir-Roman, Avenir;
+        font-size: 128.67px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="466.22" y1="123.59" x2="596.75" y2="14.06" gradientTransform="translate(0 167.74) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eb0d8b"/>
+      <stop offset=".66" stop-color="#f9a61c"/>
+      <stop offset="1" stop-color="#f4ea02"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-2">
+    <text class="cls-3" transform="translate(0 124.14)"><tspan x="0" y="0">Quat</tspan></text>
+    <text class="cls-3" transform="translate(290.92 124.14)"><tspan x="0" y="0">r</tspan></text>
+    <text class="cls-3" transform="translate(333.89 124.14)"><tspan x="0" y="0">o</tspan></text>
+  </g>
+  <path class="cls-1" d="M584.93,78.09c0-43.13-35.04-78.09-78.26-78.09s-78.26,34.96-78.26,78.09,35.04,78.09,78.26,78.09c16.21,0,53.23,13.11,65.72,4.69,10.42-7.02,19.05-16.48,25.07-27.56,6.02-11.06-12.54-41.75-12.54-55.21h0ZM506.67,129.31c-28.35,0-51.33-22.93-51.33-51.22s22.98-51.22,51.33-51.22,51.33,22.93,51.33,51.22-22.98,51.22-51.33,51.22Z"/>
+</svg>
