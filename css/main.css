@@ -1,0 +1,75 @@
+html {
+    font-size: 16px;
+}
+
+h2, h3, h4 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#prod-punch-buttons p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #E9168A;
+    border-radius: 25px;
+    margin: 10px 0;
+}
+
+.prod-flav-button {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.prod-flav-button-deselected {
+    background-color: #656464;
+    color: white;
+}
+
+.prod-flav-button-grapefruit {
+    background-color: #E9168A;
+    color: black;
+}
+
+.prod-flav-button-passionfruit {
+    background-color: #ED1C27;
+    color: black;
+}
+
+.prod-flav-button-orange {
+    background-color: #F7A51E;
+    color: black;
+}
+
+.prod-flav-button-pineapple {
+    background-color: #7DA23F;
+    color: black;
+}
+
+#merch-carousel {
+    display: flex;
+    transition: transform 0.2s ease;
+}
+
+.merch-item {
+    max-width:100%;
+    height:auto;
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 24px;
+    }
+}
