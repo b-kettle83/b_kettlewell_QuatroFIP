@@ -8,138 +8,194 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white">
-    <h1>Welcome to Quatro</h1>
-    <header class="">
-        <img src="images/burger.svg" class="" alt="burger menu icon">
-        <img src="images/HorizontalLogo.svg" class="" alt="Quatro logo">
-        <nav class="">
-            <ul class="">
+    <h1 class="hidden">Welcome to Quatro</h1>
+    <header class="p-8 grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 md:items-center lg:items-center">
+        <img src="images/burger.svg" class="col-start-4 col-span-1 h-12 md:hidden lg:hidden" alt="burger menu icon">
+        <img src="images/HorizontalLogo.svg" class="col-start-1 col-span-3 md:col-start-1 md:col-span-3 lg:col-start-1 lg:col-span-3" alt="Quatro logo">
+        <nav class="hidden md:block md:col-start-5 md:col-span-5 lg:block lg:col-start-5 lg:col-span-5">
+            <ul class="md:list-none md:flex md:justify-between lg:list-none lg:flex lg:justify-between">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="community.html">Community</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#">Profile</a></li>
+                <li class="md:hidden lg:hidden"><a href="#">Cart</a></li>
+                <li class="md:hidden lg:hidden"><a href="#">Profile</a></li>
             </ul>
         </nav>
-        <img src="images/HeaderProfile.svg" class="" alt="profile icon">
-        <img src="images/HeaderCart.svg" class="" alt="checkout cart icon">
+
+        <div class="hidden md:block lg:block md:col-start-11 md:col-span-2 lg:col-start-11 lg:col-span-2 md:flex lg:flex 
+        md:justify-end lg:justify-end">
+            <img src="images/HeaderProfile.svg" class="h-12 pr-8" alt="profile icon">
+            <img src="images/HeaderCart.svg" class="h-12" alt="checkout cart icon">
+        </div>
+
     </header>
 
-    <section class="">	
-        <img class=""
-			sizes="
-				(min-width: 1024px) 560px, 
-				(min-width: 768px) 460px,
-				(min-width: 400px) 580px,
-				50vw"
-			srcset="
-				images/mob_prod_hero_580.jpeg 580w,
-				images/tab_prod_hero_460.jpeg 460w,
-				images/desk_prod_hero_560.jpeg 560w"
-			src="images/mob_prod_sect1.jpeg"
-			alt="Cans of the 5 different Quatro flavours on a pink background">
-        <h2>Make It Your Own</h2>
-        <p>Shop our renewed selection of products, ranging from new flavours, to shopping bags, to custom Quatro cans</p>
-    </section>
+    <!-- Hero Section -->
 
-    <section class="">
-        <img class=""
-			sizes="
-				(min-width: 1024px) 655px, 
-				(min-width: 768px) 535px,
-				(min-width: 400px) 580px,
-				50vw"
-			srcset="
-				images/mob_prod_sect1_580.jpeg 580w,
-				images/tab_prod_sect1_535.jpeg 535w,
-				images/desk_prod_sect1_655.jpeg 655w"
-			src="images/mob_prod_sect1.jpeg"
-			alt="A boy drinks a can of Quatro on the beach">
-        <h2>Enjoy The Classic</h2>
-        <p>Quatro’s original mixture of grapefruit, passionfruit, orange, and pineapple is available as always, now in our newly 
-            titled and revamped “Fruit Punch” flavour</p>
-        <div>
-            <p>What’s Changed?</p>
-            <p>What Are The Ingredients?</p>
-            <p>Where Can I Buy?</p>
-        </div>
-    </section>
-
-    <section class="">
-        <h2>The Choice Is Yours</h2>
-        <p>Each of the original four fruits used to make Quatro has been made into its own flavour. Learn more about them here</p>
-        <div>
-            <p>Grapefruit</p>
-            <p>Passionfruit</p>
-            <p>Orange</p>
-            <p>Pineapple</p>
-        </div>
-        <section class="">
-            <div>
-                <h3>Grapefruit</h3>
-                <p>Enjoy Quatro’s original base flavour. A sweet, tart, and bubbly experience, this citrusy drink is sure to brighten up 
-                    your day and give you the boost you need!</p>
-                <p>Made with real strawberries, grapefruit, and fruit juice</p>
-                <p>Ingredients: CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, GRAPEFRUIT, STRAWBERRIES, CANE SUGAR, NATURAL FLAVOURS</p>
+    <div class="bg-[#1C1C1C] p-4 mb-16 items-center">
+        <section class="pb-4 grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 items-center">	
+            <img class="rounded-[25px] col-span-full mx-auto mb-4 order-1 md:col-start-7 lg:col-start-7
+            md:order-2 lg:order-2 lg:mx-0 lg:justify-self-end"
+                sizes="
+                    (min-width: 1024px) 560px, 
+                    (min-width: 768px) 460px,
+                    (min-width: 400px) 580px,
+                    50vw"
+                srcset="
+                    images/desk_prod_hero_560.jpeg 560w,
+                    images/tab_prod_hero_460.jpeg 460w,
+                    images/mob_prod_hero_580.jpeg 580w"
+                src="images/mob_prod_hero_580.jpeg"
+                alt="Cans of the 5 different Quatro flavours on a pink background">
+            <div class="col-span-full mt-4 order-2 md:col-start-1 md:col-span-5 lg:col-start-1 lg:col-span-5 md:order-1 lg:order-1">
+                <h2 class="text-4xl mb-4">Make It Your Own</h2>
+                <p>Shop our renewed selection of products, ranging from new flavours, to shopping bags, to custom Quatro cans</p>
             </div>
-            <img src="images/prod_grapefruit.jpeg">
+        </section>
+    </div>
+
+    <!-- Fruit Punch -->
+
+    <section class="grid gap-4 gap-y-0 grid-cols-4 mb-16 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-8">
+        <div class="p-8 my-0 bg-[#1C1C1C] col-span-full rounded-tl-[25px] rounded-tr-[25px]
+        md:p-0 md:bg-transparent md:col-start-1 md:col-span-7 md:mt-8
+        lg:p-0 lg:bg-transparent lg:col-start-1 lg:col-span-7 lg:mt-8">
+            <img class="rounded-[25px] mx-auto"
+                sizes="
+                    (min-width: 1024px) 655px, 
+                    (min-width: 768px) 535px,
+                    (min-width: 400px) 580px,
+                    50vw"
+                srcset="
+                    images/mob_prod_sect1_580.jpeg 580w,
+                    images/tab_prod_sect1_535.jpeg 535w,
+                    images/desk_prod_sect1_655.jpeg 655w"
+                src="images/mob_prod_sect1.jpeg"
+                alt="A boy drinks a can of Quatro on the beach">
+        </div>
+            
+        <div class="p-8 my-0 h-auto bg-[#1C1C1C] self-start col-span-full rounded-bl-[25px] rounded-br-[25px]
+        md:col-start-8 md:col-span-5 md:rounded-[25px]
+        lg:col-start-8 lg:col-span-5 lg:rounded-[25px]">
+            <h2 class="text-2xl mb-4">Enjoy The Classic</h2>
+            <p class="mb-8">Quatro’s original mixture of grapefruit, passionfruit, orange, and pineapple is available as always, now in our newly 
+                titled and revamped “Fruit Punch” flavour</p>
+            <div id="prod-punch-buttons">
+                <p>What’s Changed?</p>
+                <p>What Are The Ingredients?</p>
+                <p>Where Can I Buy?</p>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section class="grid gap-4 grid-cols-4 mb-16 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-8">
+        <div class="col-span-full">
+            <h2 class="text-2xl mb-4">The Choice Is Yours</h2>
+            <p>Each of the original four fruits used to make Quatro has been made into its own flavour. Learn more about them here</p>
+        </div>
+
+        <div class="col-start-1 col-span-2 md:col-start-1 md:col-span-3 lg:col-start-1 lg:col-span-3 
+        prod-flav-button prod-flav-button-grapefruit">Grapefruit</div>
+        <div class="col-start-3 col-span-2 md:col-start-4 md:col-span-3 lg:col-start-4 lg:col-span-3 
+        prod-flav-button prod-flav-button-deselected">Passionfruit</div>
+        <div class="col-start-1 col-span-2 md:col-start-7 md:col-span-3 lg:col-start-7 lg:col-span-3 
+        prod-flav-button prod-flav-button-deselected">Orange</div>
+        <div class="col-start-3 col-span-2 md:col-start-10 md:col-span-3 lg:col-start-10 lg:col-span-3 
+        prod-flav-button prod-flav-button-deselected">Pineapple</div>
+
+        <section class="col-span-full grid gap-4 grid-cols-4 mb-16 md:grid-cols-12 lg:grid-cols-12 p-8 bg-[#1C1C1C] rounded-[25px]">
+            <div class="col-start-1 col-span-2 md:col-start-1 md:col-span-6 lg:col-start-1 lg:col-span-6">
+                <h3 class="text-2xl mb-4 text-[#E9168A]">GRAPEFRUIT</h3>
+                <p class="mb-4">Enjoy Quatro’s original base flavour. A sweet, tart, and bubbly experience, this citrusy drink is sure to brighten up 
+                    your day and give you the boost you need!</p>
+                <p class="mb-8">Made with real strawberries, grapefruit, and fruit juice</p>
+                <p class="hidden md:block lg:block text-[0.5rem]">Ingredients: CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, 
+                    GRAPEFRUIT, STRAWBERRIES, CANE SUGAR, NATURAL FLAVOURS</p>
+            </div>
+            <img src="images/prod_grapefruit.jpeg" class="col-start-3 col-span-2 md:col-start-8 md:col-span-5 lg:col-start-8 
+            lg:col-span-5 rounded-[25px] justify-self-end">
+            <p class="text-[0.5rem] col-span-full md:hidden lg:hidden">Ingredients: CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, GRAPEFRUIT, STRAWBERRIES, 
+                CANE SUGAR, NATURAL FLAVOURS</p>
         </section>
     </section>
 
-    <section class="">	
-        <img class=""
-			sizes="
-				(min-width: 1024px) 655px, 
-				(min-width: 768px) 535px,
-				(min-width: 400px) 580px,
-				50vw"
-			srcset="
-				images/mob_prod_sect2_580.jpeg 580w,
-				images/tab_prod_sect2_535.jpeg 535w,
-				images/desk_prod_sect2_655.jpeg 655w"
-			src="images/mob_prod_sect1.jpeg"
-			alt="Two cans of Quatro sit on a table">
-        <h2>Custom Cans</h2>
-        <p>Create your own personal Quatro can with a custom name, design, colours, and more! Make your own custom flavour to come 
-            with it, and you may have a chance to make your creation an official Quatro flavour!</p>
-        <p>Create Now</p>
+    <section class="grid gap-4 gap-y-0 grid-cols-4 mb-16 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-8">	
+        <div class="p-8 my-0 bg-[#1C1C1C] col-span-full rounded-tl-[25px] rounded-tr-[25px] order-1
+        md:p-0 md:bg-transparent md:col-start-6 md:col-span-7 md:mt-8 md:order-2
+        lg:p-0 lg:bg-transparent lg:col-start-6 lg:col-span-7 lg:mt-8 lg:order-2">
+            <img class="rounded-[25px] mx-auto md:col-start-7 lg:col-start-7
+            lg:mx-0 lg:justify-self-end"
+                sizes="
+                    (min-width: 1024px) 1100px, 
+                    (min-width: 768px) 800px,
+                    (min-width: 400px) 600px,
+                    50vw"
+                srcset="
+                    images/mob_prod_sect2_580.jpeg 580w,
+                    images/tab_prod_sect2_535.jpeg 535w,
+                    images/desk_prod_sect2_655.jpeg 655w"
+                src="images/mob_prod_sect1.jpeg"
+                alt="Two cans of Quatro sit on a table">
+        </div>
+        <div class="flex flex-col justify-end self-end bg-[#1C1C1C] p-8 col-span-full rounded-bl-[25px] rounded-br-[25px] order-2 
+        md:col-start-1 md:col-span-5 md:order-1 md:rounded-[25px]
+        lg:col-start-1 lg:col-span-5 lg:order-1 lg:rounded-[25px]">
+            <h2 class="text-2xl mb-4">Custom Cans</h2>
+            <p class="mb-8">Create your own personal Quatro can with a custom name, design, colours, and more! Make your own custom flavour to come 
+                with it, and you may have a chance to make your creation an official Quatro flavour!</p>
+            <div class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center">Create Now</div>
+        </div>
     </section>
 
-    <section>
-        <h2>The Quatro Style</h2>
-        <p>Shop our merch selections to introduce some Quatro colours to your wardrobe and accessories</p>
-        <div>
-            <img src="images/prod_phonecase_690.jpeg" alt="A phone case with the Quatro logo on the back">
-            <p>Phone Cases: $44.99</p>
-            <p>Brighten up your phone with a quality and well protected phone case with a strong grip and modern design feature 
+    <section class="grid grid-cols-4 gap-4 md:grid-cols-12 lg:grid-cols-12 mx-8">
+        
+        <div class="col-span-full">
+            <h2 class="">The Quatro Style</h2>
+            <p>Shop our merch selections to introduce some Quatro colours to your wardrobe and accessories</p>
+        </div>
+
+        
+        <div class="col-span-full md:col-start-1 md:col-span-4 lg:col-start-1 lg:col-span-4 mb-8 flex flex-col h-full">
+            <img src="images/prod_phonecase_690.jpeg" class="rounded-[25px] mb-8" alt="A phone case with the Quatro logo on the back">
+            <p class="text-[1.25rem] mb-4">Phone Cases: $44.99</p>
+            <p class="mb-8">Brighten up your phone with a quality and well protected phone case with a strong grip and modern design feature 
                 Quatro’s vibrant colours</p>
-            <p>(Size specification in cart)</p>
-            <img src="images/cart.svg" alt="Cart button">
+            <div class="mt-auto mb-4">
+                <p class="text-[0.5rem] mb-4">(Size specification in cart)</p>
+                <img src="images/cart.svg" alt="Cart button" class="w-24">
+            </div>
         </div>
 
-        <div>
-            <img src="images/prod_bag_690.jpeg" alt="A bag with Quatro colours and the Quatro logo">
-            <p>Shopping Bags: $7.99</p>
-            <p>Find Quatro’s designs on a strong and durable tote bag, perfect for shopping and carrying whatever you find yourself 
+        <div class="col-span-full md:col-start-5 md:col-span-4 lg:col-start-5 lg:col-span-4 mb-8 flex flex-col h-full">
+            <img src="images/prod_bag_690.jpeg" class="rounded-[25px] mb-8" alt="A bag with Quatro colours and the Quatro logo">
+            <p class="text-[1.25rem] mb-4">Shopping Bags: $7.99</p>
+            <p class="mb-8">Find Quatro’s designs on a strong and durable tote bag, perfect for shopping and carrying whatever you find yourself 
                 needing</p>
-            <p>(Size specification in cart)</p>
-            <img src="images/cart.svg" alt="Cart button">
+            <div class="mt-auto mb-4">
+                <p class="text-[0.5rem] mb-4">(Size specification in cart)</p>
+                <img src="images/cart.svg" alt="Cart button" class="w-24">
+            </div>
         </div>
 
-        <div>
-            <img src="images/prod_tshirt_690.jpeg" alt="A black shirt with coloured stripes and the Quatro logo on the chest">
-            <p>T-Shirts: $9.99</p>
-            <p>Bring some colour into your wardrobe with Quatro’s high quality t-shirts</p>
-            <p>(Size specification in cart)</p>
-            <img src="images/cart.svg" alt="Cart button">
+        <div class="col-span-full md:col-start-9 md:col-span-4 lg:col-start-9 lg:col-span-4 mb-8 flex flex-col h-full">
+            <img src="images/prod_tshirt_690.jpeg" class="rounded-[25px] mb-8" alt="A black shirt with coloured stripes and the Quatro logo on the chest">
+            <p class="text-[1.25rem] mb-4">T-Shirts: $9.99</p>
+            <p class="mb-8">Bring some colour into your wardrobe with Quatro’s high quality t-shirts</p>
+            <div class="mt-auto mb-4">
+                <p class="text-[0.5rem] mb-4">(Size specification in cart)</p>
+                <img src="images/cart.svg" alt="Cart button" class="w-24">
+            </div>
         </div>
+        
     </section>
 
-    <footer>
-        <section>
-            <nav>
-                <ul>
+    <footer class="p-8 my-0 bg-[#1C1C1C] flex flex-col">
+        <section class="border-b-4 border-b-[#E9168A] grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12">
+            <nav class="col-start-1 col-span-2">
+                <ul class="list-none [&>li]:mb-2">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="#">About</a></li>
@@ -150,20 +206,22 @@
                 </ul>
             </nav>
 
-            <div>
-                <div>
+            <div class="col-start-3 col-span-2 md:col-start-10 md:col-span-3 lg:col-start-10 lg:col-span-3">
+                <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
                     <img src="images/twitter.svg" alt="X logo">
                     <img src="images/instagram.svg" alt="Instagram logo">
                     <img src="images/tiktok.svg" alt="Tiktok logo">
                 </div>
-                <div>
+                <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
                     <img src="images/facebook.svg" alt="Facebook logo">
                     <img src="images/youtube.svg" alt="YouTube logo">
                 </div>
             </div>
-        </section>
 
-        <p>Copyright 2025 Quatro. All rights reserved</p>
+            <img src="images/cart.svg" alt="Cart button" class="col-start-4 col-span-1 md:col-start-12 md:col-span-1 lg:col-start-12 
+            lg:col-span-1 mb-8">
+        </section>
+        <p class="text-[0.5rem] p-8 mx-auto">Copyright 2025 Quatro. All rights reserved</p>
     </footer>
     <script src="js/main.js"></script>
 </body>
