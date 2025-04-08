@@ -26,6 +26,10 @@ p {
     border-radius: 25px;
 }
 
+.prod-flav-button:hover {
+    cursor: pointer;
+}
+
 .prod-flav-button-deselected {
     background-color: #656464;
     color: white;
@@ -51,6 +55,29 @@ p {
     color: black;
 }
 
+.prod-flav-name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.prod-flav-bio {
+    margin-bottom: 1rem;
+}
+
+.prod-flav-main-ingredients {
+    margin-bottom: 2rem;
+}
+
+.prod-flav-ingredients {
+    display: none;
+    font-size: 0.5rem;
+}
+
+.prod-flav-second-ingredients {
+    display: flex;
+    font-size: 0.5rem;
+}
+
 #merch-carousel {
     display: flex;
     transition: transform 0.2s ease;
@@ -66,10 +93,26 @@ p {
     html {
         font-size: 18px;
     }
+
+    .prod-flav-ingredients {
+        display: block;
+    }
+
+    .prod-flav-second-ingredients {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) {
     html {
         font-size: 24px;
+    }
+
+    .prod-flav-ingredients {
+        display: block;
+    }
+
+    .prod-flav-second-ingredients {
+        display: none;
     }
 }
