@@ -10,12 +10,18 @@ p {
     font-family:Arial, Helvetica, sans-serif;
 }
 
-#prod-punch-buttons p {
+.prod-info-button {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
     background-color: #E9168A;
     border-radius: 25px;
     margin: 10px 0;
+    transition: transform 0.2s ease;
+}
+
+.button-scale:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .prod-flav-button {
@@ -24,10 +30,7 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-}
-
-.prod-flav-button:hover {
-    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 .prod-flav-button-deselected {
@@ -78,6 +81,10 @@ p {
     font-size: 0.5rem;
 }
 
+#prod-cans-create-button {
+    transition: transform 0.2s ease;
+}
+
 #merch-carousel {
     display: flex;
     transition: transform 0.2s ease;
@@ -87,6 +94,14 @@ p {
     max-width:100%;
     height:auto;
     flex-shrink: 0;
+}
+
+.prod-cart-button {
+    transition: transform 0.2s ease;
+}
+
+.footer-social {
+    transition: transform 0.2s ease;
 }
 
 @media (min-width: 768px) {

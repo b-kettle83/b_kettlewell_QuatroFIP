@@ -79,12 +79,12 @@
         md:col-start-8 md:col-span-5 md:rounded-[25px]
         lg:col-start-8 lg:col-span-5 lg:rounded-[25px]">
             <h2 class="text-2xl mb-4">Enjoy The Classic</h2>
-            <p class="mb-8">Quatro’s original mixture of grapefruit, passionfruit, orange, and pineapple is available as always, now in our newly 
+            <p id="prod-punch-info" class="mb-8">Quatro’s original mixture of grapefruit, passionfruit, orange, and pineapple is available as always, now in our newly 
                 titled and revamped “Fruit Punch” flavour</p>
-            <div id="prod-punch-buttons">
-                <p>What’s Changed?</p>
-                <p>What Are The Ingredients?</p>
-                <p>Where Can I Buy?</p>
+            <div>
+                <p class="prod-info-button button-scale" data-info-index="0">What’s Changed?</p>
+                <p class="prod-info-button button-scale" data-info-index="1">What Are The Ingredients?</p>
+                <p class="prod-info-button button-scale" data-info-index="2">Where Can I Buy?</p>
             </div>
         </div>
 
@@ -98,13 +98,13 @@
         </div>
 
         <div class="col-start-1 col-span-2 md:col-start-1 md:col-span-3 lg:col-start-1 lg:col-span-3 
-        prod-flav-button prod-flav-button-grapefruit prod-flav-button-selected" data-fruit-index="0">Grapefruit</div>
+        prod-flav-button prod-flav-button-grapefruit prod-flav-button-selected button-scale" data-fruit-index="0">Grapefruit</div>
         <div class="col-start-3 col-span-2 md:col-start-4 md:col-span-3 lg:col-start-4 lg:col-span-3 
-        prod-flav-button prod-flav-button-deselected" data-fruit-index="1">Passionfruit</div>
+        prod-flav-button prod-flav-button-deselected button-scale" data-fruit-index="1">Passionfruit</div>
         <div class="col-start-1 col-span-2 md:col-start-7 md:col-span-3 lg:col-start-7 lg:col-span-3 
-        prod-flav-button prod-flav-button-deselected" data-fruit-index="2">Orange</div>
+        prod-flav-button prod-flav-button-deselected button-scale" data-fruit-index="2">Orange</div>
         <div class="col-start-3 col-span-2 md:col-start-10 md:col-span-3 lg:col-start-10 lg:col-span-3 
-        prod-flav-button prod-flav-button-deselected" data-fruit-index="3">Pineapple</div>
+        prod-flav-button prod-flav-button-deselected button-scale" data-fruit-index="3">Pineapple</div>
 
         <section class="col-span-full grid gap-4 grid-cols-4 mb-16 md:grid-cols-12 lg:grid-cols-12 p-8 bg-[#1C1C1C] 
         rounded-[25px]">
@@ -147,7 +147,7 @@
             <h2 class="text-2xl mb-4">Custom Cans</h2>
             <p class="mb-8">Create your own personal Quatro can with a custom name, design, colours, and more! Make your own custom flavour to come 
                 with it, and you may have a chance to make your creation an official Quatro flavour!</p>
-            <div class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center">Create Now</div>
+            <div id="prod-cans-create-button" class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center button-scale">Create Now</div>
         </div>
     </section>
 
@@ -166,7 +166,7 @@
                 Quatro’s vibrant colours</p>
             <div class="mt-auto mb-4">
                 <p class="text-[0.5rem] mb-4">(Size specification in cart)</p>
-                <img src="images/cart.svg" alt="Cart button" class="w-24">
+                <img src="images/cart.svg" alt="Cart button" class="w-24 prod-cart-button button-scale">
             </div>
         </div>
 
@@ -177,7 +177,7 @@
                 needing</p>
             <div class="mt-auto mb-4">
                 <p class="text-[0.5rem] mb-4">(Size specification in cart)</p>
-                <img src="images/cart.svg" alt="Cart button" class="w-24">
+                <img src="images/cart.svg" alt="Cart button" class="w-24 prod-cart-button button-scale">
             </div>
         </div>
 
@@ -187,7 +187,7 @@
             <p class="mb-8">Bring some colour into your wardrobe with Quatro’s high quality t-shirts</p>
             <div class="mt-auto mb-4">
                 <p class="text-[0.5rem] mb-4">(Size specification in cart)</p>
-                <img src="images/cart.svg" alt="Cart button" class="w-24">
+                <img src="images/cart.svg" alt="Cart button" class="w-24 prod-cart-button button-scale">
             </div>
         </div>
         
@@ -209,18 +209,18 @@
 
             <div class="col-start-3 col-span-2 md:col-start-10 md:col-span-3 lg:col-start-10 lg:col-span-3">
                 <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
-                    <img src="images/twitter.svg" alt="X logo">
-                    <img src="images/instagram.svg" alt="Instagram logo">
-                    <img src="images/tiktok.svg" alt="Tiktok logo">
+                    <img src="images/twitter.svg" alt="X logo" class="footer-social button-scale">
+                    <img src="images/instagram.svg" alt="Instagram logo" class="footer-social button-scale">
+                    <img src="images/tiktok.svg" alt="Tiktok logo" class="footer-social button-scale">
                 </div>
                 <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
-                    <img src="images/facebook.svg" alt="Facebook logo">
-                    <img src="images/youtube.svg" alt="YouTube logo">
+                    <img src="images/facebook.svg" alt="Facebook logo" class="footer-social button-scale">
+                    <img src="images/youtube.svg" alt="YouTube logo" class="footer-social button-scale">
                 </div>
             </div>
 
             <img src="images/cart.svg" alt="Cart button" class="col-start-4 col-span-1 md:col-start-12 md:col-span-1 lg:col-start-12 
-            lg:col-span-1 mb-8">
+            lg:col-span-1 mb-8 prod-cart-button button-scale">
         </section>
         <p class="text-[0.5rem] p-8 mx-auto">Copyright 2025 Quatro. All rights reserved</p>
     </footer>
