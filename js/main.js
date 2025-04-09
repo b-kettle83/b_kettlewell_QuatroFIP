@@ -1,7 +1,15 @@
-const prodFlavButtons = document.querySelectorAll('.prod-flav-button'),
+const prodInfoText = document.querySelector('#prod-punch-info'), 
+    prodInfoButtons = document.querySelectorAll('.prod-info-button'),
+    prodFlavButtons = document.querySelectorAll('.prod-flav-button'),
     prodFlavBox = document.querySelector('#prod-flav-box'),
     prodFlavImg = document.querySelector('#prod-flav-image'),
     prodSecondIng = document.querySelector('#prod-second-ingredients');
+
+let prodInfo = [
+    "Enjoy a stronger, sweeter, and better tasting Quatro than ever before as we've revamped out recpies to bring in more flavour, less junk, and more customization than ever before",
+    "Every Quatro drink is made with carbonated water, high fructose corn syrup, citric acid, cane surgar, and a combination of fruits and vegeatables alongside other natural flavours",
+    "Quarto in all its forms is available in almost every international, national, or local grocery store",
+];
 
 let prodFlavours = [
     {
@@ -38,8 +46,12 @@ let prodFlavours = [
         "bio": "Add some brightness to your day with Quatro Pineapple, a mix of sour, sweet, and tang that's sure to leave your tastebuds tingling and your body with the boost it needs!",
         "mainIng": "Made with real tumeric, pineapple, and fruit juice",
         "ingredients": "Ingredients: CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, PINEAPPLE, TUMERIC, CANE SUGAR, NATURAL FLAVOURS",
-    }
-]
+    },
+];
+
+function changePunchInfo () {
+    prodInfoText.innerText = prodInfo[this.dataset.infoIndex];
+}
 
 function changeFlavourInfo () {
     prodFlavBox.innerHTML = '';
@@ -85,4 +97,6 @@ function changeFlavourInfo () {
 
 }
 
-prodFlavButtons.forEach (button => button.addEventListener('click', changeFlavourInfo))
+prodInfoButtons.forEach (button => button.addEventListener('click', changePunchInfo));
+
+prodFlavButtons.forEach (button => button.addEventListener('click', changeFlavourInfo));
