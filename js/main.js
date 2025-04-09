@@ -1,4 +1,7 @@
-const prodInfoText = document.querySelector('#prod-punch-info'), 
+const headerBurger = document.querySelector('#header-burger'),
+    headerLogo = document.querySelector('#header-logo'),
+    headerNav = document.querySelector('#header-nav'),
+    prodInfoText = document.querySelector('#prod-punch-info'), 
     prodInfoButtons = document.querySelectorAll('.prod-info-button'),
     prodFlavButtons = document.querySelectorAll('.prod-flav-button'),
     prodFlavBox = document.querySelector('#prod-flav-box'),
@@ -48,6 +51,12 @@ let prodFlavours = [
         "ingredients": "Ingredients: CARBONATED WATER, HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, PINEAPPLE, TUMERIC, CANE SUGAR, NATURAL FLAVOURS",
     },
 ];
+
+function openCloseMenu () {
+    headerNav.classList.toggle('hidden');
+    headerBurger.classList.toggle('burger-rotated');
+    headerLogo.classList.toggle('hidden');
+}
 
 function changePunchInfo () {
     prodInfoText.innerText = prodInfo[this.dataset.infoIndex];
@@ -100,3 +109,5 @@ function changeFlavourInfo () {
 prodInfoButtons.forEach (button => button.addEventListener('click', changePunchInfo));
 
 prodFlavButtons.forEach (button => button.addEventListener('click', changeFlavourInfo));
+
+headerBurger.addEventListener('click', openCloseMenu);

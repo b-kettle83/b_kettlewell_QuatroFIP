@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.02 63.25">
+<svg id="profile" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.02 63.25">
   <defs>
     <style>
       .cls-1, .cls-2 {
@@ -10,6 +10,18 @@
         stroke: #e8178a;
         stroke-miterlimit: 10;
         stroke-width: 4px;
+      }
+
+      #profile:hover {
+        cursor:pointer;
+      }
+
+      #profile:hover .cls-1, #profile:hover .cls-2 {
+        fill: #8C1B54;
+      }
+
+      #profile:hover .cls-2 {
+        stroke: #8C1B54;
       }
     </style>
   </defs>
