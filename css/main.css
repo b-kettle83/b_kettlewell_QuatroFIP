@@ -42,6 +42,10 @@ p {
     transition: transform 0.2s ease;
 }
 
+.button-scale {
+    transition: transform 0.2s ease;
+}
+
 .button-scale:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -108,23 +112,21 @@ p {
     transition: transform 0.2s ease;
 }
 
-#merch-carousel {
-    display: flex;
-    transition: transform 0.2s ease;
+.lightbox { 
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    justify-content: center;
+    align-items: center;
 }
 
-.merch-item {
-    max-width:100%;
-    height:auto;
-    flex-shrink: 0;
-}
-
-.prod-cart-button {
-    transition: transform 0.2s ease;
-}
-
-.footer-social {
-    transition: transform 0.2s ease;
+.lightbox-closer:hover {
+    color:#E9168A;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
