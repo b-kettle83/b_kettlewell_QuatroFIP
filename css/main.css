@@ -1,13 +1,27 @@
+@font-face {
+    font-family: 'futura';
+    src: url(../fonts/FuturaRenner-Regular.otf);
+}
+
+@font-face {
+    font-family: 'avenir';
+    src: url(../fonts/avenir_roman_12.otf);
+}
+
 html {
     font-size: 16px;
 }
 
 h2, h3, h4 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'futura', sans-serif;
 }
 
-p {
-    font-family:Arial, Helvetica, sans-serif;
+p, a {
+    font-family: 'avenir', sans-serif;
+}
+
+.button-div {
+    font-family: 'avenir', sans-serif;
 }
 
 #header-burger {
@@ -34,7 +48,6 @@ p {
 }
 
 .prod-info-button {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
     background-color: #E9168A;
     border-radius: 25px;
