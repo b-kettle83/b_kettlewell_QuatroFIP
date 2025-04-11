@@ -53,6 +53,7 @@ p, a {
     border-radius: 25px;
     margin: 10px 0;
     transition: transform 0.2s ease;
+    font-size: 0.8rem;
 }
 
 .button-scale {
