@@ -116,6 +116,7 @@ function changeFlavourInfo () {
     prodFlavBox.appendChild(flavourIngredients);
 
     prodFlavImg.src = `images/prod_${prodFlavours[this.dataset.fruitIndex].name}.jpeg`;
+    prodFlavImg.alt = `Quatro ${prodFlavours[this.dataset.fruitIndex].name}`;
     
     let secondFlavourIngredients = document.createElement('p');
     secondFlavourIngredients.innerText = prodFlavours[this.dataset.fruitIndex].ingredients;
@@ -141,6 +142,7 @@ function changeLightboxContent () {
 
     let merchImage = document.createElement('img');
     merchImage.src = `images/prod_${merchItems[this.dataset.merchIndex].image}_690.jpeg`;
+    merchImage.alt = `Quatro ${merchItems[this.dataset.image]}`;
     merchImage.classList.add('rounded-[25px]', 'col-start-1', 'col-span-2', 'md:col-start-1', 'md:col-span-4', 'lg:col-start-1', 'lg:col-span-4');
     prodMerchContent.appendChild(merchImage);
 
