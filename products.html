@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white">
-    <h1 class="hidden">Welcome to Quatro</h1>
+    <h1 class="hidden">Shop Quatro's Products</h1>
     <header class="p-8 grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 md:items-center lg:items-center">
         <img id="header-burger" src="images/burger.svg" class="justify-self-start col-start-1 h-8 md:hidden lg:hidden" alt="burger menu icon">
         <img id="header-logo" src="images/HorizontalLogo.svg" class="order-2 md:block md:order-1 lg:block lg:order-1 col-start-1 col-span-3 md:col-start-1 md:col-span-3 lg:col-start-1 lg:col-span-3" alt="Quatro logo">
@@ -25,8 +25,8 @@
 
         <div class="order-4 hidden md:block lg:block md:col-start-11 md:col-span-2 lg:col-start-11 lg:col-span-2 md:flex lg:flex 
         md:justify-end lg:justify-end">
-            <object data="images/HeaderProfile.svg" type="image/svg+xml" class="h-8 pr-8" alt="profile icon"></object>
-            <object data="images/HeaderCart.svg" type="image/svg+xml" class="h-8" alt="checkout cart icon"></object>
+            <object data="images/HeaderProfile.svg" type="image/svg+xml" class="h-8 pr-8"></object>
+            <object data="images/HeaderCart.svg" type="image/svg+xml" class="h-8"></object>
         </div>
 
     </header>
@@ -115,8 +115,9 @@
 
             <section class="col-span-full grid gap-4 grid-cols-4 mb-16 md:grid-cols-12 lg:grid-cols-12 p-8 bg-[#1C1C1C] 
             rounded-[25px]">
+            <h3 class="hidden">Quatro Flavour Info</h3>
                 <article id="prod-flav-box" class="col-start-1 col-span-2 md:col-start-1 md:col-span-6 lg:col-start-1 lg:col-span-6">
-                    <h3 class="text-2xl mb-4 text-[#E9168A]">GRAPEFRUIT</h3>
+                    <h4 class="text-2xl mb-4 text-[#E9168A]">GRAPEFRUIT</h4>
                     <p class="mb-4">Enjoy Quatro’s original base flavour with Quatro Grapefruit. A sweet, tart, and bubbly experience, this 
                         citrusy drink is sure to brighten up your day and give you the boost you need!</p>
                     <p class="mb-8 md:mb-0 lg:mb-0">Made with real strawberries, grapefruit, and fruit juice</p>
@@ -124,7 +125,7 @@
                         SYRUP, CITRIC ACID, GRAPEFRUIT, STRAWBERRIES, CANE SUGAR, NATURAL FLAVOURS</p>
                 </article>
                 <img id="prod-flav-image" src="images/prod_grapefruit.jpeg" class="col-start-3 col-span-2 md:col-start-8 md:col-span-5 
-                lg:col-start-8 lg:col-span-5 rounded-[25px] justify-self-end">
+                lg:col-start-8 lg:col-span-5 rounded-[25px] justify-self-end" alt="Quatro Grapefruit">
                 <p id="prod-second-ingredients" class="text-[0.5rem] mt-8 col-span-full md:hidden lg:hidden">Ingredients: CARBONATED WATER, 
                     HIGH FRUCTOSE CORN SYRUP, CITRIC ACID, GRAPEFRUIT, STRAWBERRIES, CANE SUGAR, NATURAL FLAVOURS</p>
             </section>
@@ -193,7 +194,7 @@
     </div>
 
     <footer class="p-8 my-0 bg-[#1C1C1C] flex flex-col">
-        <section class="border-b-4 border-b-[#E9168A] grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12">
+        <div class="border-b-4 border-b-[#E9168A] grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12">
             <nav id="footer-nav" class="col-start-1 col-span-2">
                 <ul class="list-none [&>li]:mb-2">
                     <li><a href="index.html">Home</a></li>
@@ -220,8 +221,10 @@
 
             <img src="images/cart.svg" alt="Cart button" class="col-start-4 col-span-1 md:col-start-12 md:col-span-1 lg:col-start-12 
             lg:col-span-1 mb-8 prod-cart-button button-scale">
-        </section>
+        </div>
+
         <p class="text-[0.5rem] p-8 mx-auto">Copyright 2025 Quatro. All rights reserved</p>
+        
     </footer>
     <script src="js/main.js"></script>
 </body>
