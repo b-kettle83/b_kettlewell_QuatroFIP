@@ -3,12 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to Quatro</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-black text-white">
+    <h1 class="hidden">Welcome to Quatro</h1>
+    <header class="p-8 grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 md:items-center lg:items-center">
+        <img id="header-burger" src="images/burger.svg" class="justify-self-start col-start-1 h-8 md:hidden lg:hidden" alt="burger menu icon">
+        <img id="header-logo" src="images/HorizontalLogo.svg" class="order-2 md:block md:order-1 lg:block lg:order-1 col-start-1 col-span-3 md:col-start-1 md:col-span-3 lg:col-start-1 lg:col-span-3" alt="Quatro logo">
+        <nav id="header-nav" class="order-1 col-span-full md:order-3 lg:order-3 hidden md:block md:col-start-5 md:col-span-5 lg:block lg:col-start-5 lg:col-span-5">
+            <ul class="md:list-none md:flex md:justify-between lg:list-none lg:flex lg:justify-between">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li class="md:hidden lg:hidden"><a href="#">Cart</a></li>
+                <li class="md:hidden lg:hidden"><a href="#">Profile</a></li>
+            </ul>
+        </nav>
 
+        <div class="order-4 hidden md:block lg:block md:col-start-11 md:col-span-2 lg:col-start-11 lg:col-span-2 md:flex lg:flex 
+        md:justify-end lg:justify-end">
+            <object data="images/HeaderProfile.svg" type="image/svg+xml" class="h-8 pr-8"></object>
+            <object data="images/HeaderCart.svg" type="image/svg+xml" class="h-8"></object>
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <div class="bg-[#1C1C1C] p-4 items-center grid grid-cols-[1fr_minmax(0,1200px)_1fr] mb-16">
+        <section class="col-start-2 col-span-1 pb-4 grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 items-center mx-4">	
+            <video src="video/home_cinemagraph_600.mp4" class="order-1 col-span-full md:col-start-7 md:col-span-6 lg:col-start-7 
+            lg:col-span-6 md:order-2 lg:order-2 rounded-[25px]" autoplay muted loop></video>
+            <div class="col-span-full mt-4 order-2 md:col-start-1 md:col-span-5 lg:col-start-1 lg:col-span-5 md:order-1 lg:order-1">
+                <h2 class="text-4xl mb-8">4 Is Better Than 1</h2>
+                <p class="mb-8">Create your perfect experience with four new flavours and our revolutionary flavour packets, allowing you to truly 
+                    make Quatro your own</p>
+                <a href="products.html" class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center button-scale">Shop Now</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Welcome Section -->
+
+    <div class="grid grid-cols-[1fr_minmax(0,1200px)_1fr]">
+        <section class="col-start-2 col-span-1 grid gap-4 gap-y-0 grid-cols-4 mb-16 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-4">
+            <div class="p-8 my-0 bg-[#1C1C1C] col-span-full rounded-tl-[25px] rounded-tr-[25px]
+            md:p-0 md:bg-transparent md:col-start-1 md:col-span-7
+            lg:p-0 lg:bg-transparent lg:col-start-1 lg:col-span-7">
+                <img class="rounded-[25px] mx-auto"
+                    sizes="
+                        (min-width: 1024px) 655px, 
+                        (min-width: 768px) 535px,
+                        (min-width: 400px) 580px,
+                        50vw"
+                    srcset="
+                        images/mob_prod_sect1_580.jpeg 580w,
+                        images/tab_prod_sect1_535.jpeg 535w,
+                        images/desk_prod_sect1_655.jpeg 655w"
+                    src="images/mob_prod_sect1.jpeg"
+                    alt="A boy drinks a can of Quatro on the beach">
+            </div>
+                
+            <div class="p-8 my-0 h-auto bg-[#1C1C1C] self-start col-span-full rounded-bl-[25px] rounded-br-[25px]
+            md:col-start-8 md:col-span-5 md:rounded-[25px]
+            lg:col-start-8 lg:col-span-5 lg:rounded-[25px]">
+                <h2 class="text-2xl mb-4">Rise Above</h2>
+                <p id="prod-punch-info" class="mb-8">Quatro is taking big steps into the future of carbonated beverages. After decades 
+                    of experience, we’ve perfected our recipes and options to ensure that Quatro always has something new</p>
+                <a href="#" class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center button-scale">Learn More</a>
+            </div>
+
+            
+        </section>
+    </div>
+
+    <div class="grid grid-cols-[1fr_minmax(0,1200px)_1fr]">
+        <section class="col-start-2 col-span-1 grid gap-4 grid-cols-4 mb-16 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-4">
+            <div class="col-span-full mb-4">
+                <h2 class="text-2xl mb-4">The Choice Is Yours</h2>
+                <p>Choose from our four flavours based off of the original recipe of Quatro</p>
+            </div>
+            <div class="col-start-1 col-span-2 md:col-start-1 md:col-span-3 lg:col-start-1 lg:col-span-3 mb-8 text-center">
+                <img src="images/prod_grapefruit.jpeg" class="rounded-[25px] mb-4" alt="Quatro Grapefruit">
+                <p class="text-2xl">Grapefruit</p>
+            </div>
+            <div class="col-start-3 col-span-2 md:col-start-4 md:col-span-3 lg:col-start-4 lg:col-span-3 mb-8 text-center">
+                <img src="images/prod_passionfruit.jpeg" class="rounded-[25px] mb-4" alt="Quatro Passionfruit">
+                <p class="text-2xl">Passionfruit</p>
+            </div>
+            <div class="col-start-1 col-span-2 md:col-start-7 md:col-span-3 lg:col-start-7 lg:col-span-3 mb-8 text-center">
+                <img src="images/prod_orange.jpeg" class="rounded-[25px] mb-4" alt="Quatro Orange">
+                <p class="text-2xl">Orange</p>
+            </div>
+            <div class="col-start-3 col-span-2 md:col-start-10 md:col-span-3 lg:col-start-10 lg:col-span-3 mb-8 text-center">
+                <img src="images/prod_pineapple.jpeg" class="rounded-[25px] mb-4" alt="Quatro Pineapple">
+                <p class="text-2xl">Pineapple</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="grid grid-cols-[1fr_minmax(0,1200px)_1fr]">
+        <section class="col-start-2 col-span-1 grid gap-4 gap-y-0 grid-cols-4 mb-16 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-4">	
+            <div class="p-8 my-0 bg-[#1C1C1C] col-span-full rounded-tl-[25px] rounded-tr-[25px] order-1
+            md:p-0 md:bg-transparent md:col-start-6 md:col-span-7 md:order-2
+            lg:p-0 lg:bg-transparent lg:col-start-6 lg:col-span-7 lg:order-2">
+                <img class="rounded-[25px] mx-auto md:col-start-7 lg:col-start-7
+                lg:mx-0 lg:justify-self-end"
+                    sizes="
+                        (min-width: 1024px) 1100px, 
+                        (min-width: 768px) 800px,
+                        (min-width: 400px) 600px,
+                        50vw"
+                    srcset="
+                        images/mob_prod_sect2_580.jpeg 580w,
+                        images/tab_prod_sect2_535.jpeg 535w,
+                        images/desk_prod_sect2_655.jpeg 655w"
+                    src="images/mob_prod_sect1.jpeg"
+                    alt="Two cans of Quatro sit on a table">
+            </div>
+            <div class="flex flex-col justify-end self-end bg-[#1C1C1C] p-8 col-span-full rounded-bl-[25px] rounded-br-[25px] order-2 
+            md:col-start-1 md:col-span-5 md:order-1 md:rounded-[25px]
+            lg:col-start-1 lg:col-span-5 lg:order-1 lg:rounded-[25px]">
+                <h2 class="text-2xl mb-4">Make It Your Own</h2>
+                <p class="mb-8">Quatro’s revolutionary flavour packets allow our customers to add our flavours to their drinks or other 
+                    recipes, allowing for custom Quatro flavours and the use of Quatro’s flavours in anything you make</p>
+                <a href="community.html" id="prod-cans-create-button" class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center 
+                button-scale">Find Recipes</a>
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <section>
+            <h2>More About Quatro</h2>
+            <div>
+                <p>Community Creations</p>
+                <p>Check out how our customers are using Quatro in their own home projects</p>
+                <p>Learn More &gt;</p>
+            </div>
+        </section>
+    </div>    
+
+    <footer class="p-8 my-0 bg-[#1C1C1C] flex flex-col">
+        <div class="border-b-4 border-b-[#E9168A] grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12">
+            <nav id="footer-nav" class="col-start-1 col-span-2">
+                <ul class="list-none [&>li]:mb-2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Community</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+
+            <div class="col-start-3 col-span-2 md:col-start-10 md:col-span-3 lg:col-start-10 lg:col-span-3">
+                <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
+                    <img src="images/twitter.svg" alt="X logo" class="footer-social button-scale">
+                    <img src="images/instagram.svg" alt="Instagram logo" class="footer-social button-scale">
+                    <img src="images/tiktok.svg" alt="Tiktok logo" class="footer-social button-scale">
+                </div>
+                <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
+                    <img src="images/facebook.svg" alt="Facebook logo" class="footer-social button-scale">
+                    <img src="images/youtube.svg" alt="YouTube logo" class="footer-social button-scale">
+                </div>
+            </div>
+
+            <img src="images/cart.svg" alt="Cart button" class="col-start-4 col-span-1 md:col-start-12 md:col-span-1 lg:col-start-12 
+            lg:col-span-1 mb-8 prod-cart-button button-scale">
+        </div>
+
+        <p class="text-[0.5rem] p-8 mx-auto">Copyright 2025 Quatro. All rights reserved</p>
+        
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
