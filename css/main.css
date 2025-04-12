@@ -47,6 +47,10 @@ p, a {
     transform: rotate(90deg);
 }
 
+.home-more-heading {
+    font-family: 'futura', sans-serif;
+}
+
 .prod-info-button {
     padding: 20px;
     background-color: #E9168A;
