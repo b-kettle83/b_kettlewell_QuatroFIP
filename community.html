@@ -1,208 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quatro - Our People</title>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.tailwindcss.com"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quatro - Our People</title>
+   <link href="css/main.css" rel="stylesheet" type="text/css">
+   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white">
-    <h1 class="hidden">Welcome to The Quatro Community</h1>
-    <header class="p-8 grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 md:items-center lg:items-center">
-        <img id="header-burger" src="images/burger.svg" class="justify-self-start col-start-1 h-8 md:hidden lg:hidden" alt="burger menu icon">
-        <img id="header-logo" src="images/HorizontalLogo.svg" class="order-2 md:block md:order-1 lg:block lg:order-1 col-start-1 col-span-3 md:col-start-1 md:col-span-3 lg:col-start-1 lg:col-span-3" alt="Quatro logo">
-        <nav id="header-nav" class="order-1 col-span-full md:order-3 lg:order-3 hidden md:block md:col-start-5 md:col-span-5 lg:block lg:col-start-5 lg:col-span-5">
-            <ul class="md:list-none md:flex md:justify-between lg:list-none lg:flex lg:justify-between">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li class="md:hidden lg:hidden"><a href="#">Cart</a></li>
-                <li class="md:hidden lg:hidden"><a href="#">Profile</a></li>
-            </ul>
-        </nav>
+   <h1 class="hidden">Welcome to The Quatro Community</h1>
+   <header class="p-8 grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 md:items-center lg:items-center">
+       <img id="header-burger" src="images/burger.svg" class="justify-self-start col-start-1 h-8 md:hidden lg:hidden" alt="burger menu icon">
+       <img id="header-logo" src="images/HorizontalLogo.svg" class="order-2 md:block md:order-1 lg:block lg:order-1 col-start-1 col-span-3 md:col-start-1 md:col-span-3 lg:col-start-1 lg:col-span-3" alt="Quatro logo">
+       <nav id="header-nav" class="order-1 col-span-full md:order-3 lg:order-3 hidden md:block md:col-start-5 md:col-span-5 lg:block lg:col-start-5 lg:col-span-5">
+           <ul class="md:list-none md:flex md:justify-between lg:list-none lg:flex lg:justify-between">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="community.html">Community</a></li>
+               <li class="md:hidden lg:hidden"><a href="#">Cart</a></li>
+               <li class="md:hidden lg:hidden"><a href="#">Profile</a></li>
+           </ul>
+       </nav>
 
-        <div class="order-4 hidden md:block lg:block md:col-start-11 md:col-span-2 lg:col-start-11 lg:col-span-2 md:flex lg:flex 
-        md:justify-end lg:justify-end">
-            <object data="images/HeaderProfile.svg" type="image/svg+xml" class="h-8 pr-8"></object>
-            <object data="images/HeaderCart.svg" type="image/svg+xml" class="h-8"></object>
-        </div>
 
-    </header>
+       <div class="order-4 hidden md:block lg:block md:col-start-11 md:col-span-2 lg:col-start-11 lg:col-span-2 md:flex lg:flex
+       md:justify-end lg:justify-end">
+           <object data="images/HeaderProfile.svg" type="image/svg+xml" class="h-8 pr-8"></object>
+           <object data="images/HeaderCart.svg" type="image/svg+xml" class="h-8"></object>
+       </div>
 
-    <!-- Hero Section -->
 
-    <div class="bg-[#1C1C1C] p-4 mb-16 items-center grid grid-cols-[1fr_minmax(0,1200px)_1fr]">
-        <section class="col-start-2 col-span-1 pb-4 grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 items-center mx-4">
+   </header>
 
-            <img class="rounded-[25px] col-span-full mx-auto order-1 md:col-start-7 lg:col-start-7
-            md:order-2 lg:order-2 lg:mx-0 lg:justify-self-end"
-                sizes="
-                    (min-width: 1024px) 560px, 
-                    (min-width: 768px) 475px,
-                    (min-width: 400px) 580px,
-                    50vw"
-                srcset="
-                    images/comm_mob_hero_580.jpeg 580w,
-                    images/comm_tab_hero_475.jpeg 475w,
-                    images/comm_desk_hero_560.jpeg 560w"
-                src="images/comm_mob_hero_580.jpeg"
-                alt="Quatro community members posing in front of the sunset">
 
-            <div class="col-span-full mt-4 order-2 md:col-start-1 md:col-span-5 lg:col-start-1 lg:col-span-5 md:order-1 lg:order-1">
-                <h2 class="text-4xl mb-4">Bring It All Together</h2>
-                <p>Learn about our amazing Quatro community, browse community creations, and learn how 
-                    you can get involved with our teams and communities</p>
-            </div>
+   <!-- Hero Section -->
 
-        </section>
-    </div>
 
-    <!-- Welcome Section -->
+   <div class="bg-[#1C1C1C] p-4 mb-16 items-center grid grid-cols-[1fr_minmax(0,1200px)_1fr]">
+       <section class="col-start-2 col-span-1 pb-4 grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 items-center mx-4">
 
-    <div class="grid grid-cols-[1fr_minmax(0,1200px)_1fr] mb-20">
-        <section class="col-start-2 col-span-1 grid gap-4 gap-y-0 grid-cols-4 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-4">
 
-            <div class="p-8 my-0 bg-[#1C1C1C] col-span-full rounded-tl-[25px] rounded-tr-[25px]
-            md:p-0 md:bg-transparent md:col-start-1 md:col-span-7
-            lg:p-0 lg:bg-transparent lg:col-start-1 lg:col-span-7">
-                <img class="rounded-[25px] mx-auto"
-                    sizes="
-                        (min-width: 1024px) 670px, 
-                        (min-width: 768px) 565px,
-                        (min-width: 400px) 580px,
-                        50vw"
-                    srcset="
-                        images/comm_mob_sect1_580.jpeg 580w,
-                        images/comm_tab_sect1_565.jpeg 565w,
-                        images/comm_desk_sect1_670.jpeg 670w"
-                    src="images/comm_mob_sect1_580.jpeg"
-                    alt="People toasting drinks and smiling with Quatro">
-            </div>
-                
-            <div class="p-8 my-0 h-auto bg-[#1C1C1C] self-start col-span-full rounded-bl-[25px] rounded-br-[25px]
-            md:col-start-8 md:col-span-5 md:rounded-[25px]
-            lg:col-start-8 lg:col-span-5 lg:rounded-[25px]">
-                <h2 class="text-2xl mb-4">Our People</h2>
-                <p id="prod-punch-info" class="mb-8 text-[0.85rem]">Quatro has fostered a community of amazing people focused on making a difference in 
-                    the world by promoting togetherness, confidence, support, and personal growth and improvement</p>
-                <p class="mb-8 text-[0.85rem]">Whether it’s giving advice, helping each other through the struggles, or giving each other confidence to 
-                    keep going, Quatro is a family that keeps on growing as we make a positive impact on the world</p>
-            </div>
+           <img class="rounded-[25px] col-span-full mx-auto order-1 md:col-start-7 lg:col-start-7
+           md:order-2 lg:order-2 lg:mx-0 lg:justify-self-end"
+               sizes="
+                   (min-width: 1024px) 560px,
+                   (min-width: 768px) 475px,
+                   (min-width: 400px) 580px,
+                   50vw"
+               srcset="
+                   images/comm_mob_hero_580.jpeg 580w,
+                   images/comm_tab_hero_475.jpeg 475w,
+                   images/comm_desk_hero_560.jpeg 560w"
+               src="images/comm_mob_hero_580.jpeg"
+               alt="Quatro community members posing in front of the sunset">
 
-        </section>
-    </div>
 
-    <section>
+           <div class="col-span-full mt-4 order-2 md:col-start-1 md:col-span-5 lg:col-start-1 lg:col-span-5 md:order-1 lg:order-1">
+               <h2 class="text-4xl mb-4">Bring It All Together</h2>
+               <p>Learn about our amazing Quatro community, browse community creations, and learn how
+                   you can get involved with our teams and communities</p>
+           </div>
 
-        <div>
-            <h2>We Started It, You’re Building It</h2>
-            <p>Take a look at how people are using Quatro around the world to make their own creations, whether it be custom 
-                flavours, dishes using Quatro flavours, or artwork inspired by the brand</p>
-        </div>
 
-        <article>
+       </section>
+   </div>
 
-            <img src="images/comm_cake_700.jpeg" alt="Cake made with Quatro fruits and flavours">
 
-            <div>
-                <h3>4-Layered Quatro Cake</h3>
-                <p>By: Linda Smith</p>
-                <p>“I wondered what would happen if I put some Quatro flavouring powder into my mom’s old cake recipe. 
-                    The result, a sweet, fluffy, and fruity desert that my whole family loved!”</p>
-                <a href="#">Learn More</a>
-            </div>
+   <!-- Welcome Section -->
 
-        </article>
-        
-    </section>
 
-    <section>
+   <div class="grid grid-cols-[1fr_minmax(0,1200px)_1fr] mb-20">
+       <section class="col-start-2 col-span-1 grid gap-4 gap-y-0 grid-cols-4 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-4">
 
-        <div>
-            <h2>Thirsty For More?</h2>
-            <p>Visit our social media pages to stay up to see all that our community has to make and offer, and stay up to date with all 
-                things Quatro</p>
-        </div>
 
-        <article>
-            <div>
-                <img src="images/twitter.svg" alt="X logo">
-                <img src="images/instagram.svg" alt="Instagram logo">
-                <img src="images/tiktok.svg" alt="Tiktok logo">
-                <img src="images/facebook.svg" alt="Facebook logo">
-                <img src="images/youtube.svg" alt="YouTube logo">
-            </div>
-            <h3>@QuatroDrink</h3>
-        </article>
+           <div class="p-8 my-0 bg-[#1C1C1C] col-span-full rounded-tl-[25px] rounded-tr-[25px]
+           md:p-0 md:bg-transparent md:col-start-1 md:col-span-7
+           lg:p-0 lg:bg-transparent lg:col-start-1 lg:col-span-7">
+               <img class="rounded-[25px] mx-auto"
+                   sizes="
+                       (min-width: 1024px) 670px,
+                       (min-width: 768px) 565px,
+                       (min-width: 400px) 580px,
+                       50vw"
+                   srcset="
+                       images/comm_mob_sect1_580.jpeg 580w,
+                       images/comm_tab_sect1_565.jpeg 565w,
+                       images/comm_desk_sect1_670.jpeg 670w"
+                   src="images/comm_mob_sect1_580.jpeg"
+                   alt="People toasting drinks and smiling with Quatro">
+           </div>
+              
+           <div class="p-8 my-0 h-auto bg-[#1C1C1C] self-start col-span-full rounded-bl-[25px] rounded-br-[25px]
+           md:col-start-8 md:col-span-5 md:rounded-[25px]
+           lg:col-start-8 lg:col-span-5 lg:rounded-[25px]">
+               <h2 class="text-2xl mb-4">Our People</h2>
+               <p id="prod-punch-info" class="mb-8 text-[0.85rem]">Quatro has fostered a community of amazing people focused on making a difference in
+                   the world by promoting togetherness, confidence, support, and personal growth and improvement</p>
+               <p class="mb-8 text-[0.85rem]">Whether it’s giving advice, helping each other through the struggles, or giving each other confidence to
+                   keep going, Quatro is a family that keeps on growing as we make a positive impact on the world</p>
+           </div>
 
-    </section>
 
-    <div class="grid grid-cols-[1fr_minmax(0,1200px)_1fr]">
-        <section class="col-start-2 col-span-1 grid gap-4 gap-y-0 grid-cols-4 mb-16 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-4">	
-            <div class="p-8 my-0 bg-[#1C1C1C] col-span-full rounded-tl-[25px] rounded-tr-[25px] order-1
-            md:p-0 md:bg-transparent md:col-start-6 md:col-span-7 md:order-2
-            lg:p-0 lg:bg-transparent lg:col-start-6 lg:col-span-7 lg:order-2">
-                <img class="rounded-[25px] mx-auto md:col-start-7 lg:col-start-7
-                lg:mx-0 lg:justify-self-end"
-                    sizes="
-                        (min-width: 1024px) 665px, 
-                        (min-width: 768px) 565px,
-                        (min-width: 400px) 570px,
-                        50vw"
-                    srcset="
-                        images/comm_mob_sect3_560.jpeg 560w,
-                        images/comm_tab_sect3_555.jpeg 555w,
-                        images/comm_desk_sect3_655.jpeg 655w"
-                    src="images/comm_mob_sect3_560.jpeg"
-                    alt="Quatro insiders toasting drinks">
-            </div>
-            <div class="flex flex-col justify-end self-end bg-[#1C1C1C] p-8 col-span-full rounded-bl-[25px] rounded-br-[25px] order-2 
-            md:col-start-1 md:col-span-5 md:order-1 md:rounded-[25px]
-            lg:col-start-1 lg:col-span-5 lg:order-1 lg:rounded-[25px]">
-                <h2 class="text-2xl mb-4">Quatro Insiders</h2>
-                <p class="mb-8">Join Quatro’s Insiders program to get involved in the creation process, take part in surveys and focus 
-                    groups, be the first to hear of Quatro news, events, and deals, and get early access to Quatro’s newest products</p>
-                <a href="community.html" id="prod-cans-create-button" class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center 
-                button-scale">Join Now</a>
-            </div>
-        </section>
-    </div>   
+       </section>
+   </div>
 
-    <footer class="p-8 my-0 bg-[#1C1C1C] flex flex-col">
-        <div class="border-b-4 border-b-[#E9168A] grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12">
-            <nav id="footer-nav" class="col-start-1 col-span-2">
-                <ul class="list-none [&>li]:mb-2">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="index.html">Community</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </nav>
 
-            <div class="col-start-3 col-span-2 md:col-start-10 md:col-span-3 lg:col-start-10 lg:col-span-3">
-                <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
-                    <img src="images/twitter.svg" alt="X logo" class="footer-social button-scale">
-                    <img src="images/instagram.svg" alt="Instagram logo" class="footer-social button-scale">
-                    <img src="images/tiktok.svg" alt="Tiktok logo" class="footer-social button-scale">
-                </div>
-                <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
-                    <img src="images/facebook.svg" alt="Facebook logo" class="footer-social button-scale">
-                    <img src="images/youtube.svg" alt="YouTube logo" class="footer-social button-scale">
-                </div>
-            </div>
+   <div class="grid grid-cols-[1fr_minmax(0,1200px)_1fr]">
+       <section class="col-start-2 col-span-1 grid gap-4 grid-cols-4 mb-12 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-4">
 
-            <img src="images/cart.svg" alt="Cart button" class="col-start-4 col-span-1 md:col-start-12 md:col-span-1 lg:col-start-12 
-            lg:col-span-1 mb-8 prod-cart-button button-scale">
-        </div>
 
-        <p class="text-[0.5rem] p-8 mx-auto">Copyright 2025 Quatro. All rights reserved</p>
-        
-    </footer>
-    <script src="js/main.js"></script>
+           <div class="col-span-full mb-8">
+               <h2 class="text-2xl mb-4">We Started It, You’re Building It</h2>
+               <p>Take a look at how people are using Quatro around the world to make their own creations, whether it be custom
+                   flavours, dishes using Quatro flavours, or artwork inspired by the brand</p>
+           </div>
+
+
+           <article class="col-span-full grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 items-center mb-16">
+
+
+               <img src="images/comm_cake_700.jpeg" class="rounded-[25px] col-span-full order-1 md:col-start-8 md:col-span-5 md:order-2
+               lg:col-start-8 lg:col-span-5 lg:order-2" alt="Cake made with Quatro fruits and flavours">
+
+
+               <div class="col-span-full order-2 md:col-start-1 md:col-span-6 md:order-1 lg:col-start-1 lg:col-span-6 lg:order-1">
+                   <h3 class="text-[1.5rem] text-[#E9168A] mb-4">4-Layered Quatro Cake</h3>
+                   <p class="text-[1.25rem] mb-8">By: Linda Smith</p>
+                   <p class="mb-8">“I wondered what would happen if I put some Quatro flavouring powder into my mom’s old cake recipe.
+                       The result, a sweet, fluffy, and fruity desert that my whole family loved!”</p>
+                   <a href="#" class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center button-scale">Learn More</a>
+               </div>
+
+
+           </article>
+
+
+           <article class="col-span-full grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 items-center mb-16">
+
+
+               <img src="images/comm_powder_700.jpeg" class="rounded-[25px] col-span-full md:col-start-1 md:col-span-5 lg:col-start-1
+               lg:col-span-5" alt="A large pile of of Quatro orange powder">
+
+
+               <div class="col-span-full md:col-start-7 md:col-span-6 lg:col-start-7 lg:col-span-6">
+                   <h3 class="text-[1.5rem] text-[#E9168A] mb-4">X-Treme Orange</h3>
+                   <p class="text-[1.25rem] mb-8">By: Jack Storm</p>
+                   <p class="mb-8">“I’m a big fan of Quatro Orange, so I figured, how would it taste with even more orange flavour? So
+                       I dumped 50 Orange flavour packets into an orange drink, and the results were INSANE”</p>
+                   <a href="#" class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center button-scale">Learn More</a>
+               </div>
+
+
+           </article>
+
+
+           <article class="col-span-full grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12 items-center mb-16">
+
+
+               <img src="images/comm_painting_700.jpeg" class="rounded-[25px] col-span-full order-1 md:col-start-8 md:col-span-5 md:order-2
+               lg:col-start-8 lg:col-span-5 lg:order-2" alt="Cake made with Quatro fruits and flavours">
+
+
+               <div class="col-span-full order-2 md:col-start-1 md:col-span-6 md:order-1 lg:col-start-1 lg:col-span-6 lg:order-1">
+                   <h3 class="text-[1.5rem] text-[#E9168A] mb-4">Humble Beginnings</h3>
+                   <p class="text-[1.25rem] mb-8">By: Amy White</p>
+                   <p class="mb-8">“I’ve loved Quatro since it was first around, and I wanted to pay homage to where Quatro began.
+                       Never forget where you came from!”</p>
+                   <a href="#" class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center button-scale">Learn More</a>
+               </div>
+
+
+           </article>
+          
+       </section>
+   </div>
+
+
+   <section class="text-center mb-16">
+
+
+       <div class="mx-4 mb-8">
+           <h2 class="text-2xl mb-4">Thirsty For More?</h2>
+           <p>Visit our social media pages to stay up to see all that our community has to make and offer, and stay up to date with all
+               things Quatro</p>
+       </div>
+
+
+       <article class="comm_socials w-full p-32">
+           <div class="flex justify-center [&>img]:max-w-20 [&>img]:mx-2 mb-8">
+               <img src="images/twitter.svg" alt="X logo" class="button-scale">
+               <img src="images/instagram.svg" alt="Instagram logo" class="button-scale">
+               <img src="images/tiktok.svg" alt="Tiktok logo" class="button-scale">
+               <img src="images/facebook.svg" alt="Facebook logo" class="button-scale">
+               <img src="images/youtube.svg" alt="YouTube logo" class="button-scale">
+           </div>
+           <h3 class="text-4xl">@QuatroDrink</h3>
+       </article>
+
+
+   </section>
+
+
+   <div class="grid grid-cols-[1fr_minmax(0,1200px)_1fr]">
+       <section class="col-start-2 col-span-1 grid gap-4 gap-y-0 grid-cols-4 mb-16 mx-4 md:grid-cols-12 lg:grid-cols-12 mx-4">
+           <div class="p-8 my-0 bg-[#1C1C1C] col-span-full rounded-tl-[25px] rounded-tr-[25px] order-1
+           md:p-0 md:bg-transparent md:col-start-6 md:col-span-7 md:order-2
+           lg:p-0 lg:bg-transparent lg:col-start-6 lg:col-span-7 lg:order-2">
+               <img class="rounded-[25px] mx-auto md:col-start-7 lg:col-start-7
+               lg:mx-0 lg:justify-self-end"
+                   sizes="
+                       (min-width: 1024px) 665px,
+                       (min-width: 768px) 565px,
+                       (min-width: 400px) 570px,
+                       50vw"
+                   srcset="
+                       images/comm_mob_sect3_560.jpeg 560w,
+                       images/comm_tab_sect3_555.jpeg 555w,
+                       images/comm_desk_sect3_655.jpeg 655w"
+                   src="images/comm_mob_sect3_560.jpeg"
+                   alt="Quatro insiders toasting drinks">
+           </div>
+           <div class="flex flex-col justify-end self-end bg-[#1C1C1C] p-8 col-span-full rounded-bl-[25px] rounded-br-[25px] order-2
+           md:col-start-1 md:col-span-5 md:order-1 md:rounded-[25px]
+           lg:col-start-1 lg:col-span-5 lg:order-1 lg:rounded-[25px]">
+               <h2 class="text-2xl mb-4">Quatro Insiders</h2>
+               <p class="mb-8">Join Quatro’s Insiders program to get involved in the creation process, take part in surveys and focus
+                   groups, be the first to hear of Quatro news, events, and deals, and get early access to Quatro’s newest products</p>
+               <a href="community.html" id="prod-cans-create-button" class="flex p-[20px] bg-[#E9168A] rounded-[25px] justify-center
+               button-scale">Join Now</a>
+           </div>
+       </section>
+   </div>  
+
+
+   <footer class="p-8 my-0 bg-[#1C1C1C] flex flex-col">
+       <div class="border-b-4 border-b-[#E9168A] grid gap-4 grid-cols-4 md:grid-cols-12 lg:grid-cols-12">
+           <nav id="footer-nav" class="col-start-1 col-span-2">
+               <ul class="list-none [&>li]:mb-2">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="index.html">Community</a></li>
+                   <li><a href="#">Contact Us</a></li>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#">Privacy Policy</a></li>
+               </ul>
+           </nav>
+
+
+           <div class="col-start-3 col-span-2 md:col-start-10 md:col-span-3 lg:col-start-10 lg:col-span-3">
+               <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
+                   <img src="images/twitter.svg" alt="X logo" class="footer-social button-scale">
+                   <img src="images/instagram.svg" alt="Instagram logo" class="footer-social button-scale">
+                   <img src="images/tiktok.svg" alt="Tiktok logo" class="footer-social button-scale">
+               </div>
+               <div class="flex justify-end mb-4 [&>img]:max-w-20 [&>img]:mx-2">
+                   <img src="images/facebook.svg" alt="Facebook logo" class="footer-social button-scale">
+                   <img src="images/youtube.svg" alt="YouTube logo" class="footer-social button-scale">
+               </div>
+           </div>
+
+
+           <img src="images/cart.svg" alt="Cart button" class="col-start-4 col-span-1 md:col-start-12 md:col-span-1 lg:col-start-12
+           lg:col-span-1 mb-8 prod-cart-button button-scale">
+       </div>
+
+
+       <p class="text-[0.5rem] p-8 mx-auto">Copyright 2025 Quatro. All rights reserved</p>
+      
+   </footer>
+   <script src="js/main.js"></script>
 </body>
 </html>
