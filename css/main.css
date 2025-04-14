@@ -1,3 +1,16 @@
+/* Table of Contents
+    1. Full Site Styles
+    2. Header Styles
+    3. Homepage Styles
+    4. Products Page Styles
+    5. Commmunity Page Styles
+    6. Tablet Styles
+    7. Desktop Styles */
+
+/* 1. Full Site Styles */
+
+/* Importing page fonts */
+
 @font-face {
     font-family: 'futura';
     src: url(../fonts/FuturaRenner-Regular.otf);
@@ -7,6 +20,8 @@
     font-family: 'avenir';
     src: url(../fonts/avenir_roman_12.otf);
 }
+
+/* General page fonts and font sizes, modified in tailwind CSS with rem */
 
 html {
     font-size: 16px;
@@ -23,6 +38,8 @@ p, a {
 .button-div {
     font-family: 'avenir', sans-serif;
 }
+
+/* 2. Header Styles */
 
 #header-burger {
     transition: transform 0.2s ease;
@@ -47,6 +64,8 @@ p, a {
     transform: rotate(90deg);
 }
 
+/* 3. Homepage Styles */
+
 .home-more-heading {
     font-family: 'futura', sans-serif;
 }
@@ -55,6 +74,8 @@ p, a {
     color: #E9168A;
     cursor:pointer;
 }
+
+/* 4. Products Page Styles */
 
 .prod-info-button {
     padding: 20px;
@@ -152,11 +173,15 @@ p, a {
     cursor: pointer;
 }
 
+/* 5. Community Page Styles */
+
 .comm_socials {
     background-image: url(../images/comm_mob_socialbg_770.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* 6. Tablet Styles */
 
 @media (min-width: 768px) {
     html {
@@ -179,6 +204,8 @@ p, a {
         background-image: url(../images/comm_tab_socialbg_1030.jpeg);
     }
 }
+
+/* 7. Desktop Styles */
 
 @media (min-width: 1024px) {
     html {
