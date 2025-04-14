@@ -1,26 +1,40 @@
+    /* Header consts */
 const headerBurger = document.querySelector('#header-burger'),
     headerLogo = document.querySelector('#header-logo'),
     headerNav = document.querySelector('#header-nav'),
 
+    /* Products info buttons consts */
+
     prodInfoText = document.querySelector('#prod-punch-info'), 
     prodInfoButtons = document.querySelectorAll('.prod-info-button'),
+
+    /* Products flavour box consts */
 
     prodFlavButtons = document.querySelectorAll('.prod-flav-button'),
     prodFlavBox = document.querySelector('#prod-flav-box'),
     prodFlavImg = document.querySelector('#prod-flav-image'),
     prodSecondIng = document.querySelector('#prod-second-ingredients'),
 
+    /* Products merch lightbox consts */
+
     prodMerchBox = document.querySelector('#merch-lightbox'),
     prodMerchItems = document.querySelectorAll('.prod-merch-item'),
     prodMerchContent = document.querySelector('#merch-lightbox article');
 
+/* Producsts merch lightbox closer */
+
 let prodLightboxCloser = document.querySelector('.lightbox-closer');
+
+/* Array of different information lines for the products info buttons to display depending on the index of the clicked button */
 
 let prodInfo = [
     "Enjoy a stronger, sweeter, and better tasting Quatro than ever before as we've revamped out recpies to bring in more flavour, less junk, and more customization than ever before",
     "Every Quatro drink is made with carbonated water, high fructose corn syrup, citric acid, cane surgar, and a combination of fruits and vegeatables alongside other natural flavours",
     "Quarto in all its forms is available in almost every international, national, or local grocery store",
 ];
+
+/* Array of flavour objects for the flavour box, each containing a heading name, heading colour, name for the image, bio, main ingredients,
+and full ingredients. Objects are chosen based on the index of the clicked button */
 
 let prodFlavours = [
     {
@@ -60,6 +74,9 @@ let prodFlavours = [
     },
 ];
 
+/* Array of merch objects for the merch lightbox, each containing an image name, full name and price, and bio. Objects are chosen based 
+on the index of the clicked image */
+
 let merchItems = [
     {
         "image": "phonecase",
@@ -80,15 +97,22 @@ let merchItems = [
     },
 ];
 
+/* Function that opens and closes the burger menu and shows and hides the header nav when the burger is clicked on mobile */
+
 function openCloseMenu () {
     headerNav.classList.toggle('hidden');
     headerBurger.classList.toggle('burger-rotated');
     headerLogo.classList.toggle('hidden');
 }
 
+/* Function that changes the punch info based on what button was pressed */
+
 function changePunchInfo () {
     prodInfoText.innerText = prodInfo[this.dataset.infoIndex];
 }
+
+/* Function that clears the flavour box and then repopulates it with new elements that use the information of the flavour object 
+associated with what button was clicked */
 
 function changeFlavourInfo () {
     prodFlavBox.innerHTML = '';
@@ -123,6 +147,9 @@ function changeFlavourInfo () {
     secondFlavourIngredients.classList.add('text-[0.5rem]', 'col-span-full', 'md:hidden', 'lg:hidden');
     prodSecondIng.appendChild(secondFlavourIngredients);
 
+    /* When a button is clickd, find the currently active button and turn off the active style and turn on the deactivated style, 
+    then deactivate the deactive style and activate the active style of the newly clicked one */
+
     prodFlavButtons.forEach (button => {
         if(button.classList.contains('prod-flav-button-selected')) {
             button.classList.remove('prod-flav-button-selected', `prod-flav-button-${prodFlavours[button.dataset.fruitIndex].name}`);
@@ -134,6 +161,10 @@ function changeFlavourInfo () {
     this.classList.add('prod-flav-button-selected', `prod-flav-button-${prodFlavours[this.dataset.fruitIndex].name}`);
 
 }
+
+/* Function that clears the merch lightbox and then repopulates it with the object associated with what image was clicked */
+
+/* Some elements in this box stay the same between boxes, so they aren't made with variables */
 
 function changeLightboxContent () {
     prodMerchContent.innerHTML = '';
@@ -181,20 +212,30 @@ function changeLightboxContent () {
     merchCart.classList.add('h-16', 'button-scale');
     merchInfo.appendChild(merchCart);
 
+    /* Re-add the lightbox closer event listener because there's a new closer element that needs this listener added */
+
     prodLightboxCloser.addEventListener('click', closeLightbox);
 }
+
+/* Function for closing (hiding) the lightbox */
 
 function closeLightbox () {
     prodMerchBox.classList.add('hidden');
     console.log('Close clicked');
 } 
 
+/* Activate the header menu open/close when the burger menu is clicked */
 
 headerBurger.addEventListener('click', openCloseMenu);
 
+/* If any of the punch info buttons are clicked, activate the info changing function */
+
 prodInfoButtons.forEach (button => button.addEventListener('click', changePunchInfo));
+
+/* If any of the flavour box buttons are pressed, activate the flavour box change function using that button's object */
 
 prodFlavButtons.forEach (button => button.addEventListener('click', changeFlavourInfo));
 
-prodMerchItems.forEach (item => item.addEventListener('click', changeLightboxContent));
+/* If any of the merch items are pressed, activate the lightbox function using that image's object */
 
+prodMerchItems.forEach (item => item.addEventListener('click', changeLightboxContent));
