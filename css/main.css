@@ -51,6 +51,11 @@ p, a {
     font-family: 'futura', sans-serif;
 }
 
+.home-more-link:hover {
+    color: #E9168A;
+    cursor:pointer;
+}
+
 .prod-info-button {
     padding: 20px;
     background-color: #E9168A;
